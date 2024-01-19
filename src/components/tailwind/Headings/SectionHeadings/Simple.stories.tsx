@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Simple as SimpleComponent } from "./Simple";
+import Component from "./Simple";
 
 const meta = {
   title: "Headings/Section Headings",
-  component: SimpleComponent,
+  component: Component,
   decorators: [
     (Story) => (
       <div className="bg-white">
@@ -14,7 +14,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof SimpleComponent>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

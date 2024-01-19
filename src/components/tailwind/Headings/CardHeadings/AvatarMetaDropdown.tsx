@@ -6,12 +6,9 @@ import {
   FlagIcon,
   StarIcon,
 } from "@heroicons/react/20/solid";
+import { classNames } from "../../util/classNames";
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const AvatarMetaDropdown = () => {
+export default function Example() {
   return (
     <div className="bg-white px-4 py-5 sm:px-6">
       <div className="flex space-x-3">
@@ -119,4 +116,4 @@ export const AvatarMetaDropdown = () => {
       </div>
     </div>
   );
-};
+}

@@ -2,12 +2,9 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
 import { Mark } from "../../images/Mark";
+import { classNames } from "../../util/classNames";
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const LogoMetaActions = () => {
+export default function Example() {
   return (
     <div className="px-4 py-10 sm:px-6 lg:px-8">
       <div className="mx-auto flex items-center justify-between gap-x-8 lg:mx-0">
@@ -94,4 +91,4 @@ export const LogoMetaActions = () => {
       </div>
     </div>
   );
-};
+}

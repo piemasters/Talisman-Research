@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Tabs } from "./Tabs";
+import Component from "./Tabs";
 
 const meta = {
   title: "Headings/Section Headings",
-  component: Tabs,
+  component: Component,
   decorators: [
     (Story) => (
       <div className="bg-white">
@@ -14,7 +14,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof Tabs>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

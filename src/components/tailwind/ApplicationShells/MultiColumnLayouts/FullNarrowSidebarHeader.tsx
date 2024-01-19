@@ -1,17 +1,3 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { Fragment, useState } from "react";
 import { Dialog, Menu, Transition } from "@headlessui/react";
 import {
@@ -31,6 +17,7 @@ import {
 } from "@heroicons/react/20/solid";
 import { DemoContent } from "./DemoContent";
 import { Mark } from "../../images/Mark";
+import { classNames } from "../../util/classNames";
 
 const navigation = [
   { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
@@ -45,11 +32,7 @@ const userNavigation = [
   { name: "Sign out", href: "#" },
 ];
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const FullNarrowSidebarHeader = () => {
+export default function Example() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -302,4 +285,4 @@ export const FullNarrowSidebarHeader = () => {
       </div>
     </>
   );
-};
+}

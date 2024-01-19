@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { DescriptionAction } from "./DescriptionAction";
+import Component from "./DescriptionAction";
 import { CardDemo } from "./CardDemo";
 
 const meta = {
   title: "Headings/Card Headings",
-  component: DescriptionAction,
+  component: Component,
   decorators: [
     (Story) => (
       <div className="bg-gray-100">
@@ -20,7 +20,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof DescriptionAction>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

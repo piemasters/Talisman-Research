@@ -1,23 +1,10 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 import { Fragment } from "react";
 import { Menu, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { DemoContent } from "./DemoContent";
 import { Mark } from "../../images/Mark";
+import { classNames } from "../../util/classNames";
 
 const user = {
   name: "Tom Cook",
@@ -37,11 +24,7 @@ const userNavigation = [
   { name: "Sign out", href: "#" },
 ];
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const DoubleRowNavOverlap = () => {
+export default function Example() {
   return (
     <>
       {/*
@@ -384,4 +367,4 @@ export const DoubleRowNavOverlap = () => {
       </div>
     </>
   );
-};
+}

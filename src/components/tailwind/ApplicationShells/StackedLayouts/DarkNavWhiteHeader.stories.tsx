@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { DarkNavWhiteHeader } from "./DarkNavWhiteHeader";
+import Component from "./DarkNavWhiteHeader";
 
 const meta = {
   title: "Application Shells/Stacked Layouts",
-  component: DarkNavWhiteHeader,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof DarkNavWhiteHeader>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

@@ -1,4 +1,4 @@
-export const Label = () => {
+export default function Example() {
   return (
     <div className="border-b border-gray-200 pb-5">
       <div className="-ml-2 -mt-2 flex flex-wrap items-baseline">
@@ -11,4 +11,4 @@ export const Label = () => {
       </div>
     </div>
   );
-};
+}

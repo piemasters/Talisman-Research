@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { LogoMetaActions } from "./LogoMetaActions";
+import Component from "./LogoMetaActions";
 
 const meta = {
   title: "Headings/Page Headings",
-  component: LogoMetaActions,
+  component: Component,
   decorators: [
     (Story) => (
       <div className="bg-white py-8">
@@ -14,7 +14,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof LogoMetaActions>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

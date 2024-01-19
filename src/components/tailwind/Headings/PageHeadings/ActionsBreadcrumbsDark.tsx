@@ -1,6 +1,6 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 
-export const ActionsBreadcrumbsDark = () => {
+export default function Example() {
   return (
     <div>
       <div>
@@ -83,4 +83,4 @@ export const ActionsBreadcrumbsDark = () => {
       </div>
     </div>
   );
-};
+}

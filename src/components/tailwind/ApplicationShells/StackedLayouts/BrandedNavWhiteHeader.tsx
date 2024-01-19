@@ -3,6 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
 import { Mark } from "../../images/Mark";
+import { classNames } from "../../util/classNames";
 
 const user = {
   name: "Tom Cook",
@@ -22,11 +23,7 @@ const userNavigation = [
   { name: "Sign out", href: "#" },
 ];
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const BrandedNavWhiteHeader = () => {
+export default function Example() {
   return (
     <>
       {/*
@@ -220,4 +217,4 @@ export const BrandedNavWhiteHeader = () => {
       </div>
     </>
   );
-};
+}

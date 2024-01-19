@@ -11,12 +11,9 @@ import {
   PencilIcon,
 } from "@heroicons/react/20/solid";
 import { Menu, Transition } from "@headlessui/react";
+import { classNames } from "../../util/classNames";
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const MetaActionsBreadcrumbsDark = () => {
+export default function Example() {
   return (
     <div className="lg:flex lg:items-center lg:justify-between">
       <div className="min-w-0 flex-1">
@@ -162,4 +159,4 @@ export const MetaActionsBreadcrumbsDark = () => {
       </div>
     </div>
   );
-};
+}

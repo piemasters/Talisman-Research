@@ -2,7 +2,7 @@ import { BellIcon } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
 import { Mark } from "../../images/Mark";
 
-export const ConstrainedStickyColumns = () => {
+export default function Example() {
   return (
     <div className="flex min-h-full flex-col">
       <header className="shrink-0 border-b border-gray-200 bg-white">

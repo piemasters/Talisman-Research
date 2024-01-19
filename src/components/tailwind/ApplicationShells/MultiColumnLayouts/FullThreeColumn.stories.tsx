@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { FullThreeColumn } from "./FullThreeColumn";
+import Component from "./FullThreeColumn";
 
 const meta = {
   title: "Application Shells/Multi-Column Layouts",
-  component: FullThreeColumn,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof FullThreeColumn>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

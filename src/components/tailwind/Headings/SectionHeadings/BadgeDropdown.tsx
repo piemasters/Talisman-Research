@@ -1,12 +1,9 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { EllipsisVerticalIcon } from "@heroicons/react/20/solid";
+import { classNames } from "../../util/classNames";
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const BadgeDropdown = () => {
+export default function Example() {
   return (
     <div className="border-b border-gray-200 pb-5">
       <div className="sm:flex sm:items-baseline sm:justify-between">
@@ -98,4 +95,4 @@ export const BadgeDropdown = () => {
       </div>
     </div>
   );
-};
+}

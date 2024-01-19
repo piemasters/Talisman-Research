@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { FullNarrowSidebar } from "./FullNarrowSidebar";
+import Component from "./FullNarrowSidebar";
 
 const meta = {
   title: "Application Shells/Multi-Column Layouts",
-  component: FullNarrowSidebar,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof FullNarrowSidebar>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

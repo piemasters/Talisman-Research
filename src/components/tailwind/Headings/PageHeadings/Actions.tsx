@@ -1,4 +1,4 @@
-export const Actions = () => {
+export default function Example() {
   return (
     <div className="md:flex md:items-center md:justify-between">
       <div className="min-w-0 flex-1">
@@ -22,4 +22,4 @@ export const Actions = () => {
       </div>
     </div>
   );
-};
+}

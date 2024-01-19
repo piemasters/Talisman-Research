@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { ConstrainedStickyColumns } from "./ConstrainedStickyColumns";
+import Component from "./ConstrainedStickyColumns";
 
 const meta = {
   title: "Application Shells/Multi-Column Layouts",
-  component: ConstrainedStickyColumns,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof ConstrainedStickyColumns>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

@@ -12,6 +12,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
 import { Mark } from "../../images/Mark";
+import { classNames } from "../../util/classNames";
 
 const navigation = [
   { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
@@ -22,11 +23,7 @@ const navigation = [
   { name: "Reports", href: "#", icon: ChartPieIcon, current: false },
 ];
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const FullNarrowSidebar = () => {
+export default function Example() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -199,4 +196,4 @@ export const FullNarrowSidebar = () => {
       </div>
     </>
   );
-};
+}

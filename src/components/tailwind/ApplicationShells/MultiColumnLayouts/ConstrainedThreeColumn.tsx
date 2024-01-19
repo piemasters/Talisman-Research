@@ -2,7 +2,7 @@ import { BellIcon } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
 import { Mark } from "../../images/Mark";
 
-export const ConstrainedThreeColumn = () => {
+export default function Example() {
   return (
     <>
       {/*
@@ -66,4 +66,4 @@ export const ConstrainedThreeColumn = () => {
       </div>
     </>
   );
-};
+}

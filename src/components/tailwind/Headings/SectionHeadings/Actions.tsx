@@ -1,4 +1,4 @@
-export const Actions = () => {
+export default function Example() {
   return (
     <div className="border-b border-gray-200 pb-5 sm:flex sm:items-center sm:justify-between">
       <h3 className="text-base font-semibold leading-6 text-gray-900">
@@ -20,4 +20,4 @@ export const Actions = () => {
       </div>
     </div>
   );
-};
+}

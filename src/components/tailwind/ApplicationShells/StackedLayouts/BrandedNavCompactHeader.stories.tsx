@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { BrandedNavCompactHeader } from "./BrandedNavCompactHeader";
+import Component from "./BrandedNavCompactHeader";
 
 const meta = {
   title: "Application Shells/Stacked Layouts",
-  component: BrandedNavCompactHeader,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof BrandedNavCompactHeader>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

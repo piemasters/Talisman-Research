@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { DoubleRowNavOverlap } from "./DoubleRowNavOverlap";
+import Component from "./DoubleRowNavOverlap";
 
 const meta = {
   title: "Application Shells/Stacked Layouts",
-  component: DoubleRowNavOverlap,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof DoubleRowNavOverlap>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

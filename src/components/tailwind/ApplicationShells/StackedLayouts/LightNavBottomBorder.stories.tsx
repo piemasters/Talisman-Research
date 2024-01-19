@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { LightNavBottomBorder } from "./LightNavBottomBorder";
+import Component from "./LightNavBottomBorder";
 
 const meta = {
   title: "Application Shells/Stacked Layouts",
-  component: LightNavBottomBorder,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof LightNavBottomBorder>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

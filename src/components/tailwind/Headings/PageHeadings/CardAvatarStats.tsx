@@ -9,7 +9,7 @@ const stats = [
   { label: "Personal days left", value: 2 },
 ];
 
-export const CardAvatarStats = () => {
+export default function Example() {
   return (
     <div className="overflow-hidden rounded-lg bg-white shadow">
       <h2 className="sr-only" id="profile-overview-title">
@@ -56,4 +56,4 @@ export const CardAvatarStats = () => {
       </div>
     </div>
   );
-};
+}

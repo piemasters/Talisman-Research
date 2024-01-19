@@ -12,6 +12,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
 import { Mark } from "../../images/Mark";
+import { classNames } from "../../util/classNames";
 
 const navigation = [
   { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
@@ -27,11 +28,7 @@ const teams = [
   { id: 3, name: "Workcation", href: "#", initial: "W", current: false },
 ];
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const DarkSidebar = () => {
+export default function Example() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -267,4 +264,4 @@ export const DarkSidebar = () => {
       </div>
     </>
   );
-};
+}

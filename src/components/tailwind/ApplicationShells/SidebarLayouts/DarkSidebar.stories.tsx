@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { DarkSidebar as DarkSidebarComponent } from "./DarkSidebar";
+import Component from "./DarkSidebar";
 
 const meta = {
   title: "Application Shells/Sidebar Layouts",
-  component: DarkSidebarComponent,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof DarkSidebarComponent>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

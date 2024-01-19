@@ -17,7 +17,7 @@ const profile = {
   ],
 };
 
-export const BannerImage = () => {
+export default function Example() {
   return (
     <div>
       <div>
@@ -74,4 +74,4 @@ export const BannerImage = () => {
       </div>
     </div>
   );
-};
+}

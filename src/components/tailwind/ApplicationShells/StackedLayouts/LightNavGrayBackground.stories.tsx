@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { LightNavGrayBackground } from "./LightNavGrayBackground";
+import Component from "./LightNavGrayBackground";
 
 const meta = {
   title: "Application Shells/Stacked Layouts",
-  component: LightNavGrayBackground,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
@@ -15,7 +15,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof LightNavGrayBackground>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

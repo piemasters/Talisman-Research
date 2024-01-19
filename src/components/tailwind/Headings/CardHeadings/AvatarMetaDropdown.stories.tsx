@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { AvatarMetaDropdown } from "./AvatarMetaDropdown";
+import Component from "./AvatarMetaDropdown";
 
 const meta = {
   title: "Headings/Card Headings",
-  component: AvatarMetaDropdown,
+  component: Component,
   decorators: [
     (Story) => (
       <div className="bg-gray-100">
@@ -28,7 +28,7 @@ const meta = {
       </div>
     ),
   ],
-} satisfies Meta<typeof AvatarMetaDropdown>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

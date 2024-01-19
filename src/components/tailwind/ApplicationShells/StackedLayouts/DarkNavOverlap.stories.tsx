@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { DarkNavOverlap } from "./DarkNavOverlap";
+import Component from "./DarkNavOverlap";
 
 const meta = {
   title: "Application Shells/Stacked Layouts",
-  component: DarkNavOverlap,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof DarkNavOverlap>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

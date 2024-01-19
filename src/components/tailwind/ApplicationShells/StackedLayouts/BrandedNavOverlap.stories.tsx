@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { BrandedNavOverlap } from "./BrandedNavOverlap";
+import Component from "./BrandedNavOverlap";
 
 const meta = {
   title: "Application Shells/Stacked Layouts",
-  component: BrandedNavOverlap,
+  component: Component,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof BrandedNavOverlap>;
+} satisfies Meta<typeof Component>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

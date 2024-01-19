@@ -1,13 +1,11 @@
+import { classNames } from "../../util/classNames";
+
 const tabs = [
   { name: "Open", href: "#", current: true },
   { name: "Closed", href: "#", current: false },
 ];
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const InlineTabs = () => {
+export default function Example() {
   return (
     <div className="border-b border-gray-200">
       <div className="sm:flex sm:items-baseline">
@@ -36,4 +34,4 @@ export const InlineTabs = () => {
       </div>
     </div>
   );
-};
+}

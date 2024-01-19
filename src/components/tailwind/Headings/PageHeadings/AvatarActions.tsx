@@ -1,4 +1,4 @@
-export const AvatarActions = () => {
+export default function Example() {
   return (
     <div className="md:flex md:items-center md:justify-between md:space-x-5">
       <div className="flex items-start space-x-5">
@@ -46,4 +46,4 @@ export const AvatarActions = () => {
       </div>
     </div>
   );
-};
+}

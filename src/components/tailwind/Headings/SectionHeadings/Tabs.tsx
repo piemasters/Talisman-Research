@@ -1,17 +1,5 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
+import { classNames } from "../../util/classNames";
+
 const tabs = [
   { name: "Applied", href: "#", current: false },
   { name: "Phone Screening", href: "#", current: false },
@@ -20,11 +8,7 @@ const tabs = [
   { name: "Hired", href: "#", current: false },
 ];
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(" ");
-}
-
-export const Tabs = () => {
+export default function Example() {
   return (
     <div className="border-b border-gray-200 pb-5 sm:pb-0">
       <h3 className="text-base font-semibold leading-6 text-gray-900">
@@ -68,4 +52,4 @@ export const Tabs = () => {
       </div>
     </div>
   );
-};
+}
