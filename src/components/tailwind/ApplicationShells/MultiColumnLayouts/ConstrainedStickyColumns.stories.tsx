@@ -8,6 +8,13 @@ const meta = {
   parameters: {
     layout: "fullscreen",
   },
+  decorators: [
+    (Story) => (
+      <div className="bg-white">
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof Component>;
 
 export default meta;

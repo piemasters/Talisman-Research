@@ -18,6 +18,7 @@ import {
 } from "@heroicons/react/20/solid";
 import { DemoContent } from "./DemoContent";
 import { classNames } from "../../util/classNames";
+import { Mark } from "../../images/Mark";
 
 const navigation = [
   { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
