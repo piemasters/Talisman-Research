@@ -2,12 +2,12 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
+import { Mark } from "../../images/Mark";
 
 const user = {
   name: "Tom Cook",
   email: "tom@example.com",
-  imageUrl:
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  imageUrl: "/src/assets/tailwind/profile-photo.png",
 };
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -44,15 +44,13 @@ export const LightNavGrayBackground = () => {
                 <div className="flex h-16 justify-between">
                   <div className="flex">
                     <div className="flex flex-shrink-0 items-center">
-                      <img
+                      <Mark
                         className="block h-8 w-auto lg:hidden"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt="Your Company"
+                        color="#4f46e5"
                       />
-                      <img
+                      <Mark
                         className="hidden h-8 w-auto lg:block"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt="Your Company"
+                        color="#4f46e5"
                       />
                     </div>
                     <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">

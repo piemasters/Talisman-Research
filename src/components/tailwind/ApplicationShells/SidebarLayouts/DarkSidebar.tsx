@@ -11,6 +11,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
+import { Mark } from "../../images/Mark";
 
 const navigation = [
   { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
@@ -99,11 +100,7 @@ export const DarkSidebar = () => {
                   {/* Sidebar component, swap this element with another sidebar if you like */}
                   <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-2 ring-1 ring-white/10">
                     <div className="flex h-16 shrink-0 items-center">
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="Your Company"
-                      />
+                      <Mark className="h-8 w-auto" color="#6366f1" />
                     </div>
                     <nav className="flex flex-1 flex-col">
                       <ul role="list" className="flex flex-1 flex-col gap-y-7">
@@ -169,11 +166,7 @@ export const DarkSidebar = () => {
           {/* Sidebar component, swap this element with another sidebar if you like */}
           <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6">
             <div className="flex h-16 shrink-0 items-center">
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt="Your Company"
-              />
+              <Mark className="h-8 w-auto" color="#6366f1" />
             </div>
             <nav className="flex flex-1 flex-col">
               <ul role="list" className="flex flex-1 flex-col gap-y-7">
@@ -232,7 +225,7 @@ export const DarkSidebar = () => {
                   >
                     <img
                       className="h-8 w-8 rounded-full bg-gray-800"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      src="/src/assets/tailwind/profile-photo.png"
                       alt=""
                     />
                     <span className="sr-only">Your profile</span>
@@ -260,7 +253,7 @@ export const DarkSidebar = () => {
             <span className="sr-only">Your profile</span>
             <img
               className="h-8 w-8 rounded-full bg-gray-800"
-              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              src="/src/assets/tailwind/profile-photo.png"
               alt=""
             />
           </a>

@@ -1,16 +1,16 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { BrandSidebar } from "./BrandSidebar";
+import { BrandSidebar as BrandSidebarComponent } from "./BrandSidebar";
 
 const meta = {
   title: "Application Shells/Sidebar Layouts",
-  component: BrandSidebar,
+  component: BrandSidebarComponent,
   parameters: {
     layout: "fullscreen",
   },
-} satisfies Meta<typeof BrandSidebar>;
+} satisfies Meta<typeof BrandSidebarComponent>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Branded: Story = {};
+export const BrandSidebar: Story = {};

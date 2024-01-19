@@ -17,12 +17,12 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
+import { Mark } from "../../images/Mark";
 
 const user = {
   name: "Tom Cook",
   email: "tom@example.com",
-  imageUrl:
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  imageUrl: "/src/assets/tailwind/profile-photo.png",
 };
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
@@ -64,11 +64,7 @@ export const BrandedNavOverlap = () => {
                   <div className="relative flex h-16 items-center justify-between lg:border-b lg:border-indigo-400 lg:border-opacity-25">
                     <div className="flex items-center px-2 lg:px-0">
                       <div className="flex-shrink-0">
-                        <img
-                          className="block h-8 w-8"
-                          src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=300"
-                          alt="Your Company"
-                        />
+                        <Mark className="block h-8 w-8" color="#a5b4fc" />
                       </div>
                       <div className="hidden lg:ml-10 lg:block">
                         <div className="flex space-x-4">
@@ -268,4 +264,4 @@ export const BrandedNavOverlap = () => {
       </div>
     </>
   );
-}
+};

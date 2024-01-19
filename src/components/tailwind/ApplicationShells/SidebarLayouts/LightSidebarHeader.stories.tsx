@@ -13,4 +13,4 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const LightHeader: Story = {};
+export const LightSidebarWithHeader: Story = {};

@@ -1,16 +1,13 @@
 import { BellIcon } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
+import { Mark } from "../../images/Mark";
 
 export const ConstrainedStickyColumns = () => {
   return (
     <div className="flex min-h-full flex-col">
       <header className="shrink-0 border-b border-gray-200 bg-white">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <img
-            className="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt="Your Company"
-          />
+          <Mark className="h-8 w-auto" color="#4f46e5" />
           <div className="flex items-center gap-x-8">
             <button
               type="button"
@@ -23,7 +20,7 @@ export const ConstrainedStickyColumns = () => {
               <span className="sr-only">Your profile</span>
               <img
                 className="h-8 w-8 rounded-full bg-gray-800"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                src="/src/assets/tailwind/profile-photo.png"
                 alt=""
               />
             </a>

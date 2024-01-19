@@ -30,6 +30,7 @@ import {
   MagnifyingGlassIcon,
 } from "@heroicons/react/20/solid";
 import { DemoContent } from "./DemoContent";
+import { Mark } from "../../images/Mark";
 
 const navigation = [
   { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
@@ -117,11 +118,7 @@ export const FullNarrowSidebarHeader = () => {
 
                   <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-2 ring-1 ring-white/10">
                     <div className="flex h-16 shrink-0 items-center">
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="Your Company"
-                      />
+                      <Mark className="h-8 w-auto" color="#4f46e5" />
                     </div>
                     <nav className="flex flex-1 flex-col">
                       <ul role="list" className="-mx-2 flex-1 space-y-1">
@@ -156,11 +153,7 @@ export const FullNarrowSidebarHeader = () => {
         {/* Static sidebar for desktop */}
         <div className="hidden lg:fixed lg:inset-y-0 lg:left-0 lg:z-50 lg:block lg:w-20 lg:overflow-y-auto lg:bg-gray-900 lg:pb-4">
           <div className="flex h-16 shrink-0 items-center justify-center">
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt="Your Company"
-            />
+            <Mark className="h-8 w-auto" color="#4f46e5" />
           </div>
           <nav className="mt-8">
             <ul role="list" className="flex flex-col items-center space-y-1">
@@ -242,7 +235,7 @@ export const FullNarrowSidebarHeader = () => {
                     <span className="sr-only">Open user menu</span>
                     <img
                       className="h-8 w-8 rounded-full bg-gray-50"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      src="/src/assets/tailwind/profile-photo.png"
                       alt=""
                     />
                     <span className="hidden lg:flex lg:items-center">

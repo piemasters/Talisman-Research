@@ -1,5 +1,6 @@
 import { BellIcon } from "@heroicons/react/24/outline";
 import { DemoContent } from "./DemoContent";
+import { Mark } from "../../images/Mark";
 
 export const ConstrainedThreeColumn = () => {
   return (
@@ -15,11 +16,7 @@ export const ConstrainedThreeColumn = () => {
       <div className="flex min-h-full flex-col">
         <header className="shrink-0 bg-gray-900">
           <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-              alt="Your Company"
-            />
+            <Mark className="h-8 w-auto" color="#6366f1" />
             <div className="flex items-center gap-x-8">
               <button
                 type="button"
@@ -32,7 +29,7 @@ export const ConstrainedThreeColumn = () => {
                 <span className="sr-only">Your profile</span>
                 <img
                   className="h-8 w-8 rounded-full bg-gray-800"
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  src="/src/assets/tailwind/profile-photo.png"
                   alt=""
                 />
               </a>

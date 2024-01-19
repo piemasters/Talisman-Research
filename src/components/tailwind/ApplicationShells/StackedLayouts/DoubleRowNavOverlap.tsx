@@ -17,12 +17,12 @@ import { Menu, Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { DemoContent } from "./DemoContent";
+import { Mark } from "../../images/Mark";
 
 const user = {
   name: "Tom Cook",
   email: "tom@example.com",
-  imageUrl:
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+  imageUrl: "/src/assets/tailwind/profile-photo.png",
 };
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -62,11 +62,7 @@ export const DoubleRowNavOverlap = () => {
                   <div className="absolute left-0 flex-shrink-0 lg:static">
                     <a href="#">
                       <span className="sr-only">Your Company</span>
-                      <img
-                        className="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=300"
-                        alt="Your Company"
-                      />
+                      <Mark className="h-8 w-auto" color="#a5b4fc" />
                     </a>
                   </div>
 
@@ -241,11 +237,7 @@ export const DoubleRowNavOverlap = () => {
                         <div className="pb-2 pt-3">
                           <div className="flex items-center justify-between px-4">
                             <div>
-                              <img
-                                className="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                alt="Your Company"
-                              />
+                              <Mark className="h-8 w-auto" color="#4f46e5" />
                             </div>
                             <div className="-mr-2">
                               <Popover.Button className="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
