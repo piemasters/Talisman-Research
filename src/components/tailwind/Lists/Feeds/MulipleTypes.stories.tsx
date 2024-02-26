@@ -1,17 +1,17 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Component from "./HorizontalLinkCards";
+import Component from "./MultipleTypes";
 
 const meta = {
-  title: "Lists/Grid Lists",
+  title: "Lists/Feeds",
   component: Component,
   parameters: {
     layout: "fullscreen",
   },
   decorators: [
     (Story) => (
-      <div className="py-10 bg-gray-100">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div className="py-12 bg-white">
+        <div className="max-w-lg px-6 mx-auto">
           <Story />
         </div>
       </div>
@@ -22,4 +22,4 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const HorizontalLinkCards: Story = {};
+export const WithMultipleItemTypes: Story = {};

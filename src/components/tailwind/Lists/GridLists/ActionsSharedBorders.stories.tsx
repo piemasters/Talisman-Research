@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Component from "./ActionsSharedBorders";
 
 const meta = {
-  title: "Lists/GridLists",
+  title: "Lists/Grid Lists",
   component: Component,
   parameters: {
     layout: "fullscreen",
