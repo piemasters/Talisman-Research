@@ -1,0 +1,42 @@
+export const team = [
+  {
+    name: "Tom Cook",
+    email: "tom.cook@example.com",
+    href: "#",
+    imageUrl: "/src/assets/tailwind/profile-photo.png",
+    handle: "tomcook",
+    status: "online",
+  },
+  {
+    name: "Whitney Francis",
+    email: "whitney.francis@example.com",
+    href: "#",
+    imageUrl: "/src/assets/tailwind/profile-photo-4.png",
+    handle: "whitneyfrancis",
+    status: "offline",
+  },
+  {
+    name: "Leonard Krasner",
+    email: "leonard.krasner@example.com",
+    href: "#",
+    imageUrl: "/src/assets/tailwind/profile-photo-7.png",
+    handle: "leonardkrasner",
+    status: "online",
+  },
+  {
+    name: "Floyd Miles",
+    email: "floyd.miles@example.com",
+    href: "#",
+    imageUrl: "/src/assets/tailwind/profile-photo-2.png",
+    handle: "floydmiles",
+    status: "online",
+  },
+  {
+    name: "Emily Selman",
+    email: "emily.selman@example.com",
+    href: "#",
+    imageUrl: "/src/assets/tailwind/profile-photo-8.png",
+    handle: "emilyselman",
+    status: "offline",
+  },
+];
