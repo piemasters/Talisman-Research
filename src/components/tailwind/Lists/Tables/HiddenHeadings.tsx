@@ -6,6 +6,8 @@ import {
 } from "@heroicons/react/20/solid";
 import { classNames } from "../../util/classNames";
 
+type StatusType = "Paid" | "Withdraw" | "Overdue";
+
 const statuses = {
   Paid: "text-green-700 bg-green-50 ring-green-600/20",
   Withdraw: "text-gray-600 bg-gray-50 ring-gray-500/10",
@@ -117,7 +119,7 @@ export default function Example() {
                                 </div>
                                 <div
                                   className={classNames(
-                                    statuses[transaction.status],
+                                    statuses[transaction.status as StatusType],
                                     "rounded-md py-1 px-2 text-xs font-medium ring-1 ring-inset"
                                   )}
                                 >
