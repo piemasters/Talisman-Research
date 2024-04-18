@@ -1,14 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
+import { userEvent, within, expect } from '@storybook/test';
+import { PlusIcon } from "@heroicons/react/20/solid";
+import { cn } from "../../util/cn";
 import {
   CoreButton,
   Button,
   ButtonSettings as Settings,
   ButtonStyles as Styles,
 } from ".";
-import {} from "./ButtonStyled";
-import { PlusIcon } from "@heroicons/react/20/solid";
-import { cn } from "../../util/cn";
 
 const meta = {
   title: "Talisman/Elements/Buttons",
@@ -37,6 +36,11 @@ export const Core: Story = {
   },
   args: {
     children: "Button Text",
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    await expect(canvas.getByRole('button')).toBeInTheDocument();
+    await userEvent.click(canvas.getByRole('button'));
   },
   render: ({ children, ...args }) => (
     <>

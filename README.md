@@ -30,3 +30,5 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 https://github.com/shadcn-ui/ui/blob/main/apps/www/registry/default/ui/button.tsx
+
+https://storybook.js.org/docs/writing-stories/play-function#working-with-the-canvas
