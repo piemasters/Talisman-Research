@@ -4,6 +4,45 @@ import { Button } from "./button";
 const meta = {
   title: "Catalyst/Button",
   component: Button,
+  argTypes: {
+    color: {
+      options: [
+        "dark/zinc",
+        "light",
+        "dark/white",
+        "dark",
+        "white",
+        "zinc",
+        "indigo",
+        "cyan",
+        "red",
+        "orange",
+        "amber",
+        "yellow",
+        "lime",
+        "green",
+        "emerald",
+        "teal",
+        "sky",
+        "blue",
+        "violet",
+        "purple",
+        "fuchsia",
+        "pink",
+        "rose",
+      ],
+      control: "select",
+    },
+    children: {
+      control: "text",
+    },
+    outline: {
+      control: "boolean",
+    },
+    plain: {
+      control: "boolean",
+    },
+  },
   decorators: [
     (Story) => (
       <div className="h-full bg-white dark:bg-gray-900">
@@ -22,7 +61,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Core: Story = {
   args: {
+    color: "dark",
     children: "Button Text",
+    outline: false,
+    plain: false,
   },
   render: ({ children, ...args }) => (
     <>
